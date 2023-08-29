@@ -1,15 +1,9 @@
-# Матчинг товаров маркетплейса
+# DS-educational-projects
+Repository contains projects I worked on for Yandex Practicum cources
 
-
-- разработан алгоритм, который для всех товаров из validation.csv предложит несколько вариантов наиболее похожих товаров из base на базе предварительного отбора топ-100 кандидатов с помощью
- *Faiss*, затем ранжирования отобранных кандидатов c *LightGBMRanker* и последующим отбором топ-5;
-- метрика качества алгоритма - accuracy@5.
-
-## Данные
-
-https://disk.yandex.ru/d/BBEphK0EHSJ5Jw
-
-- *base.csv* - анонимизированный набор товаров. Каждый товар представлен как уникальный id (0-base, 1-base, 2-base) и вектор признаков размерностью 72.
-- *train.csv -* обучающий датасет. Каждая строчка - один товар, для которого известен уникальный id (0-query, 1-query, …) , вектор признаков И id товара из *base.csv*, который максимально похож на него (по мнению экспертов).
-- *validation.csv* - датасет с товарами (уникальный id и вектор признаков), для которых надо найти наиболее близкие товары из *base.csv*
-- *validation_answer.csv* - правильные ответы к предыдущему файлу.
+| #    | Наименование проекта                | Описание                                                     | Стек                                                         |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1.   | [Анализ текстов](https://github.com/DSDarya/DS-educational-projects/tree/main/Analyzing%20Texts) | Анализ комментариев пользователей на токсичность             | python, pandas, numpy, nltk, sklearn, tf-idf, FastText, wordcloud, gensim |
+| 2.   | [Защита персональных данных](https://github.com/DSDarya/DS-educational-projects/tree/main/Personal%20data) | Разработка модели анонимизации персональных данных | python, pandas, numpy, sklearn |
+| 3.   | [Прогноз количества заказов для сервиса такси](https://github.com/DSDarya/DS-educational-projects/tree/main/Taxi%20Service) | Разработка системы предсказания объема заказа | python, pandas, numpy, sklearn, lightgbm, seaborn, matplotlib |
+| 4.   | [Прогноз оттока клиентов для телекоммуникационной компании](https://github.com/DSDarya/DS-educational-projects/tree/main/Telecom%20company) | Разработка системы предсказания оттока клиентов | python, pandas, numpy, sklearn, optuna, lightgbm, seaborn, phik, matplotlib |
